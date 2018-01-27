@@ -13,8 +13,8 @@ class Base{
 
 $base = new Base;
 echo $base->name."<br/>"; // it works
-echo $base->somePersonalInfo; // PHP Fatal error:  Uncaught Error: Cannot access protected property Base::$somePersonalInfo
-echo $base->password; // PHP Fatal error:  Uncaught Error: Cannot access private property Base::$password
+//echo $base->somePersonalInfo; // PHP Fatal error:  Uncaught Error: Cannot access protected property Base::$somePersonalInfo
+//echo $base->password; // PHP Fatal error:  Uncaught Error: Cannot access private property Base::$password
 
 class Child extends Base{
 
@@ -33,6 +33,6 @@ class Child extends Base{
 
 $child = new Child;
 echo $child->name."<br/>"; // it works
-echo $child->somePersonalInfo; // PHP Fatal error:  Uncaught Error: Cannot access protected property Child::$somePersonalInfo
+//echo $child->somePersonalInfo; // PHP Fatal error:  Uncaught Error: Cannot access protected property Child::$somePersonalInfo
 echo $child->getPersonalInfo(); // it works
 echo $child->getPassword(); // PHP Notice:  Undefined property: Child::$password

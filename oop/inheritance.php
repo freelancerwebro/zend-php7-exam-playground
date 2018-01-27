@@ -4,12 +4,12 @@ class Car {
 
 	public $color;
 
-	protected function ride(){
-		
+	public function ride(){
+		echo "Ride";
 	}
 
-	protected function horn(){
-		
+	public function horn(){
+		echo "Horn!!!";
 	}
 
 }
