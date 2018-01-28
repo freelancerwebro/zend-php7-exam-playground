@@ -10,7 +10,8 @@ class Person{
 	}
 }
 
-$person = new Person;
+$person = new Person; // instantiation
+
 $person->name = "John Doe";
 
 $person->walk();
