@@ -97,5 +97,26 @@ class Product{
 // 4) interface type hinting
 //
 
+interface AnimalInterface{
+	public function speak();
+}
+
+class Dog implements AnimalInterface{
+	public function speak()
+	{
+		return "woof";
+	}
+}
+
+class Cat implements AnimalInterface{
+	public function speak()
+	{
+		return "meow";
+	}
+}
+
+
+
+
 
 
