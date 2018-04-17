@@ -97,24 +97,34 @@ class Product{
 // 4) interface type hinting
 //
 
-interface AnimalInterface{
+interface Character{
 	public function speak();
 }
 
-class Dog implements AnimalInterface{
+class Beast implements Character{
 	public function speak()
 	{
 		return "woof";
 	}
 }
 
-class Cat implements AnimalInterface{
+class Orderus implements Character{
 	public function speak()
 	{
-		return "meow";
+		return "bark";
 	}
 }
 
+class Battle{
+
+	public $character;
+	function __construct(Character $character)
+	{
+		$this->character = $character;
+	}
+
+	
+}
 
 
 
